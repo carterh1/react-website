@@ -1,0 +1,88 @@
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.App {
+  text-align: center;
+  background-color: #FFFBFE;
+  color: #7A7D7D;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+
+
+
+
+
+
+a {
+  color: #FFFBFE;
+}
+a:hover {
+  color: #C9F2C7;
+}
+a:visited {
+  color: #FFFBFE;
+}
+a:active {
+  color: #FFFBFE;
+}
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.box {
+  padding: 5px 10px;
+  margin: 100px;
+  background: #8FECC8;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px grey;
+  height: 300px;
+
+}
+
+.boxes {
+  background: #8FECC8;
+  border-radius: 15px;
+  margin: 110px auto;
+  width: 300px;
+  height: 200px;
+  padding: 5px 10px;
+  border: 2px dashed #ffffff;
+  outline: 20px #8FECC8;
+  box-shadow: 0px 0px 5px 8px #8FECC8;
+  font-size: 25px;
+  text-align: center;
+  padding: 60px;
+}
+
+
+
+
+
+.aboutmecircle {
+  width:150px;
+  height:150px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid #706C61;
+  margin: 70px;
+
+}

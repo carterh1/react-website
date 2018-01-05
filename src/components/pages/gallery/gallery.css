@@ -1,0 +1,33 @@
+h9 {
+  color: yellow;
+}
+
+.galleryPage {
+  height: 10000px;
+}
+
+
+
+.col1 {
+
+  height: 400px;
+  background-color: #706C61;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.col2 {
+
+  height: 200px;
+  background-color: grey;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.col3 {
+
+  height:400px;
+  background-color: #706C61;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}

@@ -1,0 +1,21 @@
+
+
+.App-footer {
+  height: 50px;
+  width: 100%;
+}
+
+.App-title-line {
+  height: 20px;
+  width: 100%;
+  background-color: #706C61;
+}
+
+.Footer-line {
+  height: 50px;
+  width: 100%;
+  background-color: #7A7D7D;
+  colour: white;
+  font-weight: 100px;
+  font-size: 20px;
+}

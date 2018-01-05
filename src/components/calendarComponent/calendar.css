@@ -1,0 +1,30 @@
+
+.DayPicker {
+  font-size: 15px;
+  color: #706C61;
+
+}
+
+.DayPicker-Caption > div {
+  font-size: 18px;
+
+}
+
+.DayPicker-Day--today {
+  color: #FFFBFE;
+  background-color: #706C61;
+  font-weight: 700;
+}
+
+.calendars {
+  background: #8FECC8;
+  border-radius: 15px;
+  margin-top: 7px;
+  width: 250px;
+  height: 300px;
+  border: 2px dashed #FFFBFE;
+  outline: 20px #8FECC8;
+  box-shadow: 0px 0px 5px 8px #8FECC8;
+  font-size: 15px;
+  padding-top: 10px;
+}

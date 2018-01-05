@@ -1,0 +1,14 @@
+.categories {
+  background: #8FECC8;
+  border-radius: 15px;
+  margin-top: 40px;
+  width: 250px;
+  height: 250px;
+  padding:10px;
+  border: 2px dashed #FFFBFE;
+  outline: 20px #8FECC8;
+  box-shadow: 0px 0px 5px 8px #8FECC8;
+  font-size: 15px;
+  text-align: left;
+  color: #706C61;
+}
