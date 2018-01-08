@@ -5,6 +5,7 @@ import Categories from '../../categoriesComponent/categories.js';
 import Archives from '../../archivesComponent/archives.js';
 import Searchbar from '../../searchbarComponent/searchbar.js';
 import Header from '../../headerComponent/header.js';
+import Footer from '../../footerComponent/footer.js';
 
 
 class Blog extends Component {
@@ -13,17 +14,35 @@ class Blog extends Component {
       <div id="Blog" className="container-fluid">
       <Header/>
         <br/>
+        <div className="blogheader">
           <h1> Blog: Some Tales to Tell </h1>
-
+          </div>
             <div id="rowone" className="rowone">
-            <div className="col-sm-1">
-            </div>
+
             <div className="col-sm-8">
+              <div id="post" className="posts">
+                <article>
+                <img src="blogimg1" alt="HNY image"/>
+                  <header>
+                    <h1>Happy New Year</h1>
+                    <h2><time>2nd January 2018</time></h2>
+                  </header>
+                  <content>
+
+                    <p>What will you do? </p>
+                    <p>This year was very quiet, hot chocolate and fireworks</p>
+                  </content>
+                  <footer>
+                    <p>by Heather </p>
+                  </footer>
+                </article>
+
+              </div>
               <div id="post" className="posts">
                 <article>
                   <header>
                     <h1>Happy New Year</h1>
-                    <h3><time>1st January 2018</time></h3>
+                    <h2><time>1st January 2018</time></h2>
                   </header>
                   <content>
                     <p>Happy New Year to All! </p>
@@ -33,11 +52,12 @@ class Blog extends Component {
                     <p>by Heather </p>
                   </footer>
                 </article>
-              </div>
-              </div>
-              <div className="col-sm-2">
-                <div className="searchbar">
 
+              </div>
+            </div>
+            <div className="col-sm-4">
+
+                <div className="searchbar">
                 </div>
                 <div className="calendars">
                   <LocalizedExample/>
@@ -49,11 +69,11 @@ class Blog extends Component {
                   <Archives/>
                 </div>
               </div>
-              <div className="col-sm-1">
-              </div>
+
+
             </div>
 
-      <div className="App-title-line"></div>
+      <Footer/>
     </div>
     );
   }

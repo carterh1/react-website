@@ -18,11 +18,10 @@ class Homepage extends Component {
       <div id="homepage" className="container-fluid">
         <Slideshow/>
           <Header/>
-            
+
             <div id="rowone" className="rowone">
               <div className="col-sm-4">
                 <div className="boxes">
-
                 <p> Recent Captures </p>
                 </div>
               </div>

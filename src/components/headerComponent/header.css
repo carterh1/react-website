@@ -20,12 +20,13 @@
 }
 
 .pagelinks {
+  height: 30px;
   margin: auto;
-  width: 1000px;
+  width: 1150px;
   text-align: center;
   box-shadow: 0px 0px 2px 2px #706C61;
-  background-color: #706C61;
-  height: 30px;
+  background-color: #7A7D7D;
+  border-radius: 2px;
 }
 
 .headingrow nav ul li {
