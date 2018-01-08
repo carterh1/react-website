@@ -1,30 +1,46 @@
 .App-header {
   text-align: center;
-  background-color: #C9F2C7;
-  height: 150px;
+  background-color: #FFFBFE;
+  height: 250px;
   color: white;
-  padding-top: 10px;
 }
 
 .App-title {
-  font: Montserrat;
+  font-family: 'Dancing Script', cursive;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 60px;
+  font-size: 130px;
   color: #706C61;
 
 }
 
-.App-title-line {
+.App-line {
   height: 15px;
-  width: 100%;
+  background-color: #8FECC8;
+}
+
+.pagelinks {
+  margin: auto;
+  width: 1000px;
+  text-align: center;
+  box-shadow: 0px 0px 2px 2px #706C61;
   background-color: #706C61;
+  height: 30px;
 }
 
 .headingrow nav ul li {
-  font-family: Domine;
+  font-family: 'Ledger', serif;
   display: inline-block;
   margin-right: 50px;
-  padding-right: 20px;
+  padding-right: 40px;
   font-size: 20px;
+  font-variant: small-caps;
+}
+
+a {
+  color: #8FECC8;
+}
+
+a:hover {
+  color: #8FECC8;
 }

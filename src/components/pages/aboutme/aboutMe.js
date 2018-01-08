@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './aboutme.css';
 import me from './me.JPG';
 import Header from '../../headerComponent/header.js';
+import Footer from '../../footerComponent/footer.js';
 
 
 class Aboutme extends Component {
@@ -48,7 +49,7 @@ class Aboutme extends Component {
 
               </div>
             </div>
-          <div className="App-title-line"></div>
+          <Footer/>
       </div>
     );
   }

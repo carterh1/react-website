@@ -18,7 +18,7 @@ class Homepage extends Component {
       <div id="homepage" className="container-fluid">
         <Slideshow/>
           <Header/>
-            <div className="App-title-line"></div>
+            
             <div id="rowone" className="rowone">
               <div className="col-sm-4">
                 <div className="boxes">
@@ -38,7 +38,8 @@ class Homepage extends Component {
                 </div>
               </div>
             </div>
-          <div className="App-title-line"></div>
+
+          <Footer/>
       </div>
     );
   }
