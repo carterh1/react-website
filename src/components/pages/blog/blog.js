@@ -6,6 +6,8 @@ import Archives from '../../archivesComponent/archives.js';
 import Searchbar from '../../searchbarComponent/searchbar.js';
 import Header from '../../headerComponent/header.js';
 import Footer from '../../footerComponent/footer.js';
+import blogimg1 from './BFGTeaWM.jpg';
+import blogimg2 from './BangourChruchWM.jpg';
 
 
 class Blog extends Component {
@@ -15,41 +17,46 @@ class Blog extends Component {
       <Header/>
         <br/>
         <div className="blogheader">
-          <h1> Blog: Some Tales to Tell </h1>
+
           </div>
             <div id="rowone" className="rowone">
 
             <div className="col-sm-8">
               <div id="post" className="posts">
                 <article>
-                <img src="blogimg1" alt="HNY image"/>
+                  <div className="postimage">
+                  <img src={blogimg1} alt="HNY image" height="600px" width="800px"/>
+                  </div>
                   <header>
-                    <h1>Happy New Year</h1>
+                    <h1><b>Out for Tea with the BFG!</b></h1>
                     <h2><time>2nd January 2018</time></h2>
                   </header>
                   <content>
-
-                    <p>What will you do? </p>
-                    <p>This year was very quiet, hot chocolate and fireworks</p>
+                    <h3>Who doesn't like a big cuppa and a scone?</h3>
+                    <h3>Stopped at a local cafe to get a bite to eat.</h3>
                   </content>
                   <footer>
-                    <p>by Heather </p>
+                  <br/>
+                    <h2>by Heather         - BFG - Food -</h2>
                   </footer>
                 </article>
 
               </div>
               <div id="post" className="posts">
                 <article>
+                <div className="postimage">
+                <img src={blogimg2} alt="HNY image" height="500px" width="800px"/>
+                </div>
                   <header>
-                    <h1>Happy New Year</h1>
+                    <h1><b>Happy New Year</b></h1>
                     <h2><time>1st January 2018</time></h2>
                   </header>
                   <content>
-                    <p>Happy New Year to All! </p>
-                    <p>This year was very quiet, hot chocolate and fireworks</p>
+                    <h3>Happy New Year to All! </h3>
+                    <h3>This year was very quiet, hot chocolate and fireworks</h3>
                   </content>
                   <footer>
-                    <p>by Heather </p>
+                    <h2>by Heather </h2>
                   </footer>
                 </article>
 

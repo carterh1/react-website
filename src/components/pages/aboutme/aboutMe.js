@@ -12,22 +12,23 @@ class Aboutme extends Component {
       <div id="aboutme" className="container-fluid">
         <Header/>
         <br/>
-          <h1> All About Me </h1>
-            <div id="rowone" className="rowone">
-              <div className="col-sm-2">
-              </div>
-              <div className="col-sm-4">
+
+            <div id="rowone" className="merowone">
+              <div className="col-sm-6">
                 <img src={me} className="imageofme" alt="Image of Me" />
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-6">
                 <div id="bio" className="bio">
-                  <p>Hello there, My name is Heather and I live in Scotland.</p>
+                  <h1> Welcome to Once Upon a Lime </h1>
+                  <br/>
+                  <p> My name is Heather and I live in Scotland.</p>
+
                   <p>In 2017, I graduated with a degree in Software Engineering.
                     My interests lay within Software Testing, I have a passion
                     to ensure we produce fully working applications that are friendly to all
                     users of different ages.
                   </p>
-                  <br/>
+
                   <p>I have a fondness for Roald Dahl and many of his books,
                     my favourites are the Big Friendly Giant and George's Marvellous Medicine.
                     <p>You'll see the BFG having some adventures.</p>
@@ -37,18 +38,13 @@ class Aboutme extends Component {
                      Some you may find interesting, some you may not.
                   </p>
                   <br/>
-                  <p> I hope you like some of the tales! x
+                  <p> Thanks for visiting! x
                   </p>
                 </div>
               </div>
-              <div className="col-sm-2">
-              </div>
-            </div>
-            <div id="row" className="rowtwo">
-              <div className="col-sm-12">
 
-              </div>
             </div>
+
           <Footer/>
       </div>
     );

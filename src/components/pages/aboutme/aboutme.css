@@ -1,25 +1,25 @@
-.rowone {
-  height: 500px;
+.merowone {
+  height: 700px;
   width: 100%;
 }
 
-.rowtwo {
-  height: 200px;
-  width:100%;
-}
+
 
 .imageofme {
   display: block;
   height: 600px;
   width: 450px;
+  border-radius: 10px;
   margin-top: 45px;
   margin-right: 55px;
-  border-radius: 15px;
+  margin-left: 60px;
 }
 
 .bio {
   height: 400px;
-  width: 580px;
+  width: 550px;
   margin-top: 70px;
   font-size: 18px;
+  font-family: 'Ledger', serif;
+  text-align: justify;
 }

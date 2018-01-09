@@ -26,11 +26,11 @@ class App extends Component {
 
             <Route exact path='/' component={Homepage} />
             <Route exact path='/Aboutme' component={Aboutme} />
-            <Route exact path='/Gallery' component={Gallery} />
             <Route exact path='/Blog' component={Blog} />
+            <Route exact path='/Gallery' component={Gallery} />
             <Route exact path='/Japan' component={Japan} />
 
-            
+
 
         </div>
       </Router>
