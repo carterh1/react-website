@@ -1,25 +1,43 @@
-
 .galleryrowone {
   height: 1300px;
+
+}
+
+.galleryrowtwo {
+  height: 300px;
+  width: 1250px;
+  margin-left: 100px;
 }
 
 .col1 {
   height: 400px;
+  width: 400px;
   background-color: #706C61;
-  margin-bottom: 10px;
-  border-radius: 15px;
+  margin-bottom: 20px;
+  background: #FFFBFE;
+  box-shadow: 0px 0px 1px 2px #7A7D7D;
+  border-radius: 3px;
 }
 
 .col2 {
-  height: 200px;
-  background-color: grey;
-  margin-bottom: 5px;
-  border-radius: 15px;
-}
-
-.col3 {
-  height:400px;
+  height: 400px;
   background-color: #706C61;
   margin-bottom: 10px;
-  border-radius: 15px;
+  background: #FFFBFE;
+  box-shadow: 0px 0px 1px 2px #7A7D7D;
+  border-radius: 3px;
+}
+
+.row1 {
+  height: 180px;
+  width: 190px;
+  background-color: #706C61;
+  background: #FFFBFE;
+  box-shadow: 0px 0px 1px 2px #7A7D7D;
+  border-radius: 3px;
+}
+
+.gallerysidebar {
+  margin-top: 20px;
+  margin-left: 95px;
 }

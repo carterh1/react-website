@@ -4,13 +4,13 @@
 }
 
 .App-title-line {
-  height: 20px;
+  height: 15px;
   background-color: #706C61;
 
 }
 
 .Footer-line {
-  height: 50px;
+  height: 60px;
   background-color: #7A7D7D;
   color: white;
 
@@ -19,6 +19,7 @@
 
 .weblink {
   font-size: 15px;
-  padding:10px;
+  padding-top: 10px;
   color: #C9ECC8;
+
 }

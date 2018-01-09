@@ -9,9 +9,13 @@ class Footer extends Component {
             <div className="App-title-line"/>
             <div className="Footer-line">
               <div className="weblink">
+
               Copyright Ⓒ onceuponalime.co.uk
+              <br/>
+              All images and content are owned by Heather and may not be used without written permisson.
+
               </div>
-            
+
             </div>
 
       </footer>

@@ -13,49 +13,27 @@ class Gallery extends Component {
       <div id="gallery" className="galleryPage">
         <Header/>
           <br/>
-            <h1> Gallery: Moments that I have captured </h1>
-            <h2>All images and content are owned by Heather and may not be used without written permisson.</h2>
-              <div id="rowone" className="galleryrowone">
-                <div className="col-sm-1">
+            <div id="rowone" className="galleryrowone">
+              <div className="col-sm-4">
+                <div id="image1" className="col1">
+                  <h9></h9>
                 </div>
-                <div className="col-sm-3">
-                  <div id="image1" className="col1">
-                    <h9>Col 1</h9>
-                  </div>
-                  <div id="image1" className="col1">
-                  </div>
-                  <div id="image1" className="col11">
-                  </div>
-                  <div id="image1" className="col1">
-                  </div>
+                <div id="image1" className="col1">
                 </div>
-                <div className="col-sm-2">
-                  <div id="image2" className="col2">
-                    <h9>Col 2</h9>
-                  </div>
-                  <div id="image2" className="col2">
-                  </div>
-                  <div id="image2" className="col2">
-                    <h9></h9>
-                  </div>
-                  <div id="image2" className="col2">
-                  </div>
-                  <div id="image2" className="col2">
-                    <h9></h9>
-                  </div>
-                  <div id="image2" className="col2">
-                  </div>
+                <div id="image1" className="col1">
                 </div>
-                <div className="col-sm-3">
-                  <div id="image1" className="col3">
-                    <h9>Col 3</h9>
-                  </div>
-                  <div id="image1" className="col3">
-                  </div>
-                  <div id="image1" className="col3">
-                  </div>
+              </div>
+              <div className="col-sm-4">
+                <div id="image1" className="col1">
+                  <h9></h9>
                 </div>
-                <div className="col-sm-2">
+                <div id="image1" className="col1">
+                </div>
+                <div id="image1" className="col1">
+                </div>
+              </div>
+              <div className="col-sm-2">
+                <div className="gallerysidebar">
                   <div className="calendars">
                     <LocalizedExample/>
                   </div>
@@ -66,10 +44,35 @@ class Gallery extends Component {
                     <Archives/>
                   </div>
                 </div>
-                <div className="col-sm-1">
+              </div>
+            </div>
+            <div id="rowtwo" className="galleryrowtwo">
+              <div className="col-sm-2">
+                <div id="image1" className="row1">
+
                 </div>
               </div>
-              <Footer/>
+              <div className="col-sm-2">
+                <div id="image1" className="row1">
+
+                </div>
+              </div>
+              <div className="col-sm-2">
+                <div id="image1" className="row1">
+
+                </div>
+              </div>
+              <div className="col-sm-2">
+                <div id="image1" className="row1">
+
+                </div>
+              </div>
+
+              </div>
+              <h4>All images and content are owned by Heather and may not be used without written permisson.</h4>
+
+
+            <Footer/>
       </div>
     );
   }
