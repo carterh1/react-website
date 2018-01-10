@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
+//import { NavLink } from 'react-router-dom'
 import './header.css';
 
 class Header extends Component {
@@ -31,7 +30,7 @@ class Header extends Component {
                 </li>
                 <li>
                   <Link to="/Gallery">gallery</Link>
-                </li>                
+                </li>
                 <li className="last">
                   <Link to="/Japan">japan</Link>
                 </li>

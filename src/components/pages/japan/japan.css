@@ -1,0 +1,17 @@
+.japanrowone {
+  height: 1000px;
+}
+
+.japansidebar {
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.explantation {
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Ledger', serif;
+  text-align: justify
+
+}

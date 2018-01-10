@@ -6,12 +6,14 @@
 .galleryrowtwo {
   height: 300px;
   width: 1250px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .col1 {
   height: 400px;
   width: 400px;
+  margin-top: 20px;
+  margin-left: 50px;
   background-color: #706C61;
   margin-bottom: 20px;
   background: #FFFBFE;
@@ -21,6 +23,9 @@
 
 .col2 {
   height: 400px;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 50px;
   background-color: #706C61;
   margin-bottom: 10px;
   background: #FFFBFE;
@@ -39,5 +44,5 @@
 
 .gallerysidebar {
   margin-top: 20px;
-  margin-left: 95px;
+  margin-left: 90px;
 }

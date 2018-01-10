@@ -14,9 +14,9 @@ class Gallery extends Component {
         <Header/>
           <br/>
             <div id="rowone" className="galleryrowone">
+
               <div className="col-sm-4">
                 <div id="image1" className="col1">
-                  <h9></h9>
                 </div>
                 <div id="image1" className="col1">
                 </div>
@@ -24,15 +24,15 @@ class Gallery extends Component {
                 </div>
               </div>
               <div className="col-sm-4">
-                <div id="image1" className="col1">
-                  <h9></h9>
+                <div id="image1" className="col2">
+
                 </div>
-                <div id="image1" className="col1">
+                <div id="image1" className="col2">
                 </div>
-                <div id="image1" className="col1">
+                <div id="image1" className="col2">
                 </div>
               </div>
-              <div className="col-sm-2">
+              <div className="col-sm-3">
                 <div className="gallerysidebar">
                   <div className="calendars">
                     <LocalizedExample/>
@@ -45,6 +45,7 @@ class Gallery extends Component {
                   </div>
                 </div>
               </div>
+
             </div>
             <div id="rowtwo" className="galleryrowtwo">
               <div className="col-sm-2">
@@ -69,8 +70,6 @@ class Gallery extends Component {
               </div>
 
               </div>
-              <h4>All images and content are owned by Heather and may not be used without written permisson.</h4>
-
 
             <Footer/>
       </div>

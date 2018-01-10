@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './blog.css';
-import Header from '../../headerComponent/header.js';
-import Footer from '../../footerComponent/footer.js';
 
 class Createblog extends Component {
   render() {

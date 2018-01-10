@@ -56,14 +56,14 @@ class Blog extends Component {
                     <h3>This year was very quiet, hot chocolate and fireworks</h3>
                   </content>
                   <footer>
-                    <h2>by Heather </h2>
+                    <h2>by Heather - Bangour - Church - Black&White</h2>
                   </footer>
                 </article>
 
               </div>
             </div>
-            <div className="col-sm-4">
-
+            <div className="col-sm-3">
+              <div className="gallerysidebar">
                 <div className="searchbar">
                 </div>
                 <div className="calendars">
@@ -76,7 +76,9 @@ class Blog extends Component {
                   <Archives/>
                 </div>
               </div>
-
+              </div>
+              <div className="col-sm-1">
+              </div>
 
             </div>
 

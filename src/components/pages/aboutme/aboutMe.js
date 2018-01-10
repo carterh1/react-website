@@ -15,7 +15,7 @@ class Aboutme extends Component {
 
             <div id="rowone" className="merowone">
               <div className="col-sm-6">
-                <img src={me} className="imageofme" alt="Image of Me" />
+                <img src={me} className="imageofme" alt="Me" />
               </div>
               <div className="col-sm-6">
                 <div id="bio" className="bio">
@@ -31,8 +31,8 @@ class Aboutme extends Component {
 
                   <p>I have a fondness for Roald Dahl and many of his books,
                     my favourites are the Big Friendly Giant and George's Marvellous Medicine.
-                    <p>You'll see the BFG having some adventures.</p>
-                  </p>
+                    You'll see the BFG having some adventures.</p>
+
                   <br/>
                   <p>This blog is for me to share tales of what I get up to.
                      Some you may find interesting, some you may not.
