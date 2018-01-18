@@ -10,6 +10,7 @@ import blogimg1 from './BFGTeaWM.jpg';
 import blogimg2 from './BangourChruchWM.jpg';
 
 
+
 class Blog extends Component {
   render() {
     return (
