@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
-import {
-  Lightbox,
-  LightboxTrigger,
-  LightboxModal
-} from "react-image-lightbox";
 import '../../App.css';
 import Header from '../headerComponent/header.js';
 import Footer from '../footerComponent/footer.js';
-import image1 from './BlacknessWaterWMSized.jpg';
 import Slideshow from '../photoComponent/imageGallery.js';
-import red from './Red.jpg';
+
 
 class Homepage extends Component {
   render() {

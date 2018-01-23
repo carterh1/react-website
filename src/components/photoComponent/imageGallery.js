@@ -3,8 +3,6 @@ import ImageGallery from 'react-image-gallery';
 import './imagegallery.css';
 import image1 from './BlacknessWaterWM.jpg';
 import image2 from './BeeCraigLochSnowWM.JPG';
-import image3 from './RiverWM.JPG';
-import Header from '../headerComponent/header.js';
 
 
 class Slideshow extends Component {

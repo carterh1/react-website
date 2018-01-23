@@ -3,7 +3,6 @@ import './blog.css';
 import LocalizedExample from '../../calendarComponent/calendar.js';
 import Categories from '../../categoriesComponent/categories.js';
 import Archives from '../../archivesComponent/archives.js';
-import Searchbar from '../../searchbarComponent/searchbar.js';
 import Header from '../../headerComponent/header.js';
 import Footer from '../../footerComponent/footer.js';
 import blogimg1 from './BFGTeaWM.jpg';
@@ -26,7 +25,7 @@ class Blog extends Component {
               <div id="post" className="posts">
                 <article>
                   <div className="postimage">
-                  <img src={blogimg1} alt="HNY image" height="600px" width="800px"/>
+                  <img src={blogimg1} alt="BFG" height="600px" width="800px"/>
                   </div>
                   <header>
                     <h1><b>Out for Tea with the BFG!</b></h1>
@@ -46,7 +45,7 @@ class Blog extends Component {
               <div id="post" className="posts">
                 <article>
                 <div className="postimage">
-                <img src={blogimg2} alt="HNY image" height="500px" width="800px"/>
+                <img src={blogimg2} alt="HNY" height="500px" width="800px"/>
                 </div>
                   <header>
                     <h1><b>Happy New Year</b></h1>
