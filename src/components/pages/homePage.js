@@ -3,22 +3,54 @@ import '../../App.css';
 import Header from '../headerComponent/header.js';
 import Footer from '../footerComponent/footer.js';
 import Slideshow from '../photoComponent/imageGallery.js';
+import axios from 'axios';
 
 
 class Homepage extends Component {
+  constructor(props) {
+    super(props)
+      this.state = {
+        posts:[]
+      }
+    }
+
+    componentDidMount() {
+    axios.get('http://localhost:5000/')
+  .then((response) => {
+    this.setState({
+      posts: response.data
+    })
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+}
+
+
+
+
   render() {
+
+    const latestPosts = this.state.posts.map((post, index) => (
+      <div key={index} id="latestpost" className="latestposts">
+        <div>
+          { post.title }
+        </div>
+      </div>
+    ));
+
     return (
 
       <div id="homepage" className="container-fluid">
         <Slideshow/>
           <Header/>
-
-            <div id="rowone" className="rowone">
-              <div className="col-sm-4">
-                <div className="boxes">
-                <p> Recent Captures </p>
+            <div>
+              <div id="rowone" className="homerowone">
+                <div className="col-sm-4">
+                  <div className="boxes">
+                    <p> Recent Captures </p>
+                  </div>
                 </div>
-              </div>
               <div className="col-sm-4">
                 <div className="boxes">
                   <p/>
@@ -31,7 +63,24 @@ class Homepage extends Component {
                 </div>
               </div>
             </div>
-
+            <div id="rowtwo" className="homerowtwo">
+              <div className="col-sm-4">
+                <div className="boxeslink">
+                <p>  </p>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="boxeslink">
+                  <h1>{ latestPosts }</h1>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="boxeslink">
+                <p> </p>
+                </div>
+              </div>
+            </div>
+            </div>
           <Footer/>
       </div>
     );

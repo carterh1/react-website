@@ -5,62 +5,65 @@ import Categories from '../../categoriesComponent/categories.js';
 import Archives from '../../archivesComponent/archives.js';
 import Header from '../../headerComponent/header.js';
 import Footer from '../../footerComponent/footer.js';
-import blogimg1 from './BFGTeaWM.jpg';
-import blogimg2 from './BangourChruchWM.jpg';
+import axios from 'axios';
+
 
 
 
 class Blog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts:[]
+    }
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:5000/Blog')
+      .then((response) => {
+        this.setState({
+          posts: response.data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+
   render() {
+
+    const blogPosts = this.state.posts.map((post, index) => (
+      <div key={index} id="post" className="posts">
+        <article>
+          <div className="postimage">
+          </div>
+          <header>
+            <h1><b>{ post.title }</b></h1>
+            <h2><time>{ post.date }</time></h2>
+          </header>
+          <content>
+            <h3>{ post.content }</h3>
+          </content>
+          <footer>
+          <br/>
+            <h2>{ post.category }</h2>
+          </footer>
+        </article>
+
+      </div>
+    ));
+
     return (
       <div id="Blog" className="container-fluid">
       <Header/>
         <br/>
         <div className="blogheader">
-
           </div>
-            <div id="rowone" className="rowone">
+            <div id="rowone" className="blogrowone">
+              <div className="col-sm-8">
+                { blogPosts }
 
-            <div className="col-sm-8">
-              <div id="post" className="posts">
-                <article>
-                  <div className="postimage">
-                  <img src={blogimg1} alt="BFG" height="600px" width="800px"/>
-                  </div>
-                  <header>
-                    <h1><b>Out for Tea with the BFG!</b></h1>
-                    <h2><time>2nd January 2018</time></h2>
-                  </header>
-                  <content>
-                    <h3>Who doesn't like a big cuppa and a scone?</h3>
-                    <h3>Stopped at a local cafe to get a bite to eat.</h3>
-                  </content>
-                  <footer>
-                  <br/>
-                    <h2>by Heather         - BFG - Food -</h2>
-                  </footer>
-                </article>
-
-              </div>
-              <div id="post" className="posts">
-                <article>
-                <div className="postimage">
-                <img src={blogimg2} alt="HNY" height="500px" width="800px"/>
-                </div>
-                  <header>
-                    <h1><b>Happy New Year</b></h1>
-                    <h2><time>1st January 2018</time></h2>
-                  </header>
-                  <content>
-                    <h3>Happy New Year to All! </h3>
-                    <h3>This year was very quiet, hot chocolate and fireworks</h3>
-                  </content>
-                  <footer>
-                    <h2>by Heather - Bangour - Church - Black&White</h2>
-                  </footer>
-                </article>
-
-              </div>
             </div>
             <div className="col-sm-3">
               <div className="gallerysidebar">

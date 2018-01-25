@@ -5,9 +5,9 @@ class Categories extends Component {
   render() {
     return (
       <div>
-      <h6>Categories</h6>
+      <h4>Categories</h4>
         <ul>
-          <li>Most Recent</li>
+          <li>Fitness</li>
           <li>Quilts</li>
           <li>Japanese</li>
           <li>Food</li>

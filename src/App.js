@@ -10,22 +10,24 @@ import Blog from './components/pages/blog/blog.js';
 import Japan from './components/pages/japan/japan.js';
 
 
+
 class App extends Component {
+
+
+
+
   render() {
     return (
       <Router>
 
         <div id="fullpage" className="App">
-
             <Route exact path='/' component={Homepage} />
             <Route exact path='/Aboutme' component={Aboutme} />
-            <Route exact path='/Blog' component={Blog} />
+            <Route exact path='/Blog' component={Blog}  />
             <Route exact path='/Gallery' component={Gallery} />
             <Route exact path='/Japan' component={Japan} />
-
-
-
         </div>
+
       </Router>
     );
   }

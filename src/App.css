@@ -34,3 +34,30 @@
   text-align: center;
   padding: 60px;
 }
+
+.boxeslink {
+  background: #8FECC8;
+  border-radius: 15px;
+  margin-left: 50px;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ffffff;
+  outline: 20px #8FECC8;
+  box-shadow: 0px 0px 4px 4px #8FECC8;
+  text-align: center;
+  padding: 10px;
+}
+
+.latestposts {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.homerowone {
+  height: 300px;
+}
+
+.homerowtwo {
+  height: 500px;
+
+}

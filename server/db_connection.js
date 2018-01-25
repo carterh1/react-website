@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var connection = mysql.createConnection({
   host: "160.153.129.234",
   user: "admin_Heather",
-  password: "Carter12",
+  password: "",
   database: "onceuponalimeBlog"
 });
 
@@ -19,31 +19,61 @@ connection.connect(function(err) {
   console.log('You are now connected...')
 });
 
+
+
 //Application should use the bodyparser on json files and Urls
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+
 //Start the server that is going to listen out for requests
 //This will use the enviroment port or port 3000
 //When Listening a message is printed to the console
-var server = app.listen(process.env.port || 3000, function () {
+var server = app.listen(process.env.port || 5000, function () {
   var host = server.address().address
   var port = server.address().port
 
-  console.log("Example app listening at http://%s:%s", host, port)
+  //console.log("Example app listening at http://%s:%s", host, port)
 });
 
 //Rest api to get all the posts from the database
-app.get('/Blog', function (req, res) {
+app.get('/', function (req, res) {
   //console.log(req);
-  connection.query('SELECT * FROM tbl_post', function (error, results, fields) {
+  connection.query('SELECT * FROM tbl_post ORDER BY Date DESC LIMIT 3', function (error, results, fields) {
     if (error) throw error;
+    res.header("Access-Control-Allow-Origin", "*");
     res.end(JSON.stringify(results));
     console.log(JSON.stringify(results[1].title));
     console.log(JSON.stringify(results[1].content));
     console.log(JSON.stringify(results[1].date));
+
+  });
+});
+
+// app.get('/Blog', function (req, res) {
+//   //console.log(req);
+//   connection.query('SELECT * FROM tbl_post WHERE month(Date) = 11', function (error, results, fields) {
+//     if (error) throw error;
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.end(JSON.stringify(results));
+//     console.log(JSON.stringify(results[0].title));
+//     console.log(JSON.stringify(results[0].content));
+//     console.log(JSON.stringify(results[0].date));
+//
+//   });
+// });
+
+app.get('/Blog', function (req, res) {
+  //console.log(req);
+  connection.query("SELECT * FROM tbl_post WHERE category LIKE '%Celebrations%'", function (error, results, fields) {
+    if (error) throw error;
+    res.header("Access-Control-Allow-Origin", "*");
+    res.end(JSON.stringify(results));
+    console.log(JSON.stringify(results[0].title));
+    console.log(JSON.stringify(results[0].content));
+    console.log(JSON.stringify(results[0].date));
 
   });
 });
