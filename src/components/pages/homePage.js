@@ -33,8 +33,10 @@ class Homepage extends Component {
 
     const latestPosts = this.state.posts.map((post, index) => (
       <div key={index} id="latestpost" className="latestposts">
-        <div>
-          { post.title }
+        <div className="homelist">
+        <ul>
+          <li>{ post.title }</li>
+          </ul>
         </div>
       </div>
     ));
@@ -71,12 +73,20 @@ class Homepage extends Component {
               </div>
               <div className="col-sm-4">
                 <div className="boxeslink">
-                  <h1>{ latestPosts }</h1>
+                  { latestPosts }
+
                 </div>
               </div>
               <div className="col-sm-4">
                 <div className="boxeslink">
-                <p> </p>
+                  <div className="homelist">
+                    <ul>
+                      <li>Number's 1 -10</li>
+                      <li>Thank You</li>
+                      <li>Hello</li>
+                      <li>Learn Japanese while asleep</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

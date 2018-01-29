@@ -7,8 +7,9 @@ class Archives extends Component {
       <div>
         <h6>Archives</h6>
           <select>
-            <option value="jan17">November 2017</option>
-            <option value="feb17">December 2017</option>
+            <option value="dec17">December 2017</option>
+            <option value="nov17">November 2017</option>
+
           </select>
       </div>
     )

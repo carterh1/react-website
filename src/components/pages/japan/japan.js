@@ -6,6 +6,7 @@ import Archives from '../../archivesComponent/archives.js';
 import Header from '../../headerComponent/header.js';
 import Footer from '../../footerComponent/footer.js';
 
+
 class Japan extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class Japan extends Component {
                   <p>I dream about visiting Japan one day.
                   It is a beautiful country, hopefully one day I'll get to go. My camera would never stop.
                   </p>
+
                 </div>
 
               </div>

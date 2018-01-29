@@ -24,7 +24,7 @@
 .boxes {
   background: #8FECC8;
   border-radius: 15px;
-  margin: 110px auto;
+  margin: 70px auto;
   width: 300px;
   height: 200px;
   border: 2px dashed #ffffff;
@@ -38,19 +38,19 @@
 .boxeslink {
   background: #8FECC8;
   border-radius: 15px;
-  margin-left: 50px;
+  margin: 50px auto;
   width: 300px;
   height: 200px;
   border: 2px dashed #ffffff;
   outline: 20px #8FECC8;
   box-shadow: 0px 0px 4px 4px #8FECC8;
-  text-align: center;
-  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 20px;
 }
 
-.latestposts {
-  font-size: 20px;
-  padding: 10px;
+.homelist {
+  padding-top: 10px;
 }
 
 .homerowone {
